@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Teeth + Coffee</title>
+    <!--these links provide us our typefaces and icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800" rel="stylesheet">
+
+    <!--and, of course, our own stylesheet-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 class="pageHeader" id="header">Teeth + Coffee</h1>
+    <div class="mouth">
+        <div id="teeth">
+
+          <!--notice that we're routing this image by essentially 'stepping out of' the folder we're currently in-->
+            <img src="../assets/teethVanillaJS.png">
+              <div id="cavity"></div>
+        </div>
+    </div>
+
+<!--Buttons to trigger the changes (obvi). It's possible to use other elements to trigger, though, too-->
+    <button id="coffeeBtn">
+      <i class="fa fa-coffee" aria-hidden="true"></i>
+    </button>
+    <button id="teethCleaning">
+      <i class="fa fa-magic" aria-hidden="true"></i>
+    </button>
+
+<!--VERY IMPORTANT: link your script. notice that it goes BEFORE the closing body tag-->
+<script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
